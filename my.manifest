@@ -1,0 +1,24 @@
+CACHE MANIFEST
+#v1.0.0
+#需要缓存的文件
+CACHE:
+area51/breatheback.png
+area51/breathecontent.png
+area51/breathelight.png
+img/Area-51.png
+img/Area-51_light.png
+img/Area-51-ALX.png
+img/Area-51-ALX_light.png
+img/Area-51-R2.png
+img/Area-51-R2_light.png
+img/Area-51-X58.png
+img/Area-51-X58_light.png
+img/Themal-controls.png
+img/xn01.jpg
+img/jjfn01.jpg
+img/btn_0.png
+img/btn_1.png
+img/cover.png
+#不需要缓存的文件
+NETWORK:
+*
