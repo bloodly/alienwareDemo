@@ -7,29 +7,6 @@ function autoClose() {
   $("#breathelight").fadeIn();
 }
 $(function() {
-  var element= document.documentElement;
-  element.webkitRequestFullScreen();
-  function winInfo(){
-	var strInfo = "";
-	strInfo+="\r\n网页可见区域高:"+document.body.clientHeight;
-	strInfo+="\r\n网页可见区域宽:"+document.body.offsetWidth+"(包括边线的宽)";
-	strInfo+="\r\n网页可见区域高:"+document.body.offsetHeight+"(包括边线的高)";
-	strInfo+="\r\n网页正文全文宽:"+document.body.scrollWidth;
-	strInfo+="\r\n网页正文全文高:"+document.body.scrollHeight;
-	strInfo+="\r\n网页被卷去的高:"+document.body.scrollTop;
-	strInfo+="\r\n网页被卷去的左:"+document.body.scrollLeft;
-	strInfo+="\r\n网页正文部分上:"+window.screenTop;
-	strInfo+="\r\n网页正文部分左:"+window.screenLeft;
-	strInfo+="\r\n屏幕分辨率的高:"+window.screen.height;
-	strInfo+="\r\n屏幕分辨率的宽:"+window.screen.width;
-	strInfo+="\r\n屏幕可用工作区高度:"+window.screen.availHeight;
-	strInfo+="\r\n屏幕可用工作区宽度:"+window.screen.availWidth;
-	strInfo+="\r\n返回当前网页高度:"+window.document.body.offsetHeight;
-	strInfo+="\r\n返回当前网页宽度:"+window.document.body.offsetWidth;
-	strInfo+="\r\n浏览器可视高度:"+window.innerHeight;
-	alert(strInfo)
-}
-winInfo()
   function init() {
     if (swiperParent) return;
     var swiperParent = new Swiper('.swiper-parent', {
