@@ -7,6 +7,8 @@ function autoClose() {
   $("#breathelight").fadeIn();
 }
 $(function() {
+  var element= document.documentElement;
+  element.webkitRequestFullScreen(); 
   function init() {
     if (swiperParent) return;
     var swiperParent = new Swiper('.swiper-parent', {
