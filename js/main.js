@@ -103,7 +103,7 @@ $(function() {
     autoclose = setTimeout(autoClose, autoclosetime);
   })
 
-  $("body").on("touchmove.stop",function(event){
+  $("html").on("touchmove.stop",function(event){
     event.stopPropagation();
     event.preventDefault();
   })
