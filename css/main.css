@@ -250,6 +250,7 @@ body {
   height: 36vw;
   width:100%;
   position: relative;
+      margin-bottom: 7em;
 }
 .computerbar:after {
   clear:both;
