@@ -103,5 +103,8 @@ $(function() {
     autoclose = setTimeout(autoClose, autoclosetime);
   })
 
-  $("body").on("touchmove",function(){console.log('hi')})
+  $("body").on("touchmove.stop",function(event){
+    event.stopPropagation();
+    event.preventDefault();
+  })
 })
