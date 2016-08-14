@@ -406,6 +406,9 @@ body {
 
 #breathelight {
   display: block;
+      position: relative;
+    left: -75px;
+    top: 120px;
 }
 
 #breathelight img {
