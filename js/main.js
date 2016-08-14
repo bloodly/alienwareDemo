@@ -106,5 +106,6 @@ $(function() {
   $("html").on("touchmove.stop",function(event){
     event.stopPropagation();
     event.preventDefault();
+    console.log("you should not pass")
   })
 })
