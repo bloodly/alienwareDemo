@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 #left-win,#right-win {
-  margin-top: 3em;
+  margin-top: 10em;
 }
 #left-win {
   float: left;
