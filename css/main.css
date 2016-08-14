@@ -250,6 +250,7 @@ body {
   height: 36vw;
   width:100%;
   position: relative;
+      padding-top: 3em;
       margin-bottom: 7em;
 }
 .computerbar:after {
@@ -436,7 +437,12 @@ body {
   z-index: 2;
   -webkit-animation: breathe 5s infinite ease-in-out;animation: breathe 5s infinite ease-in-out;
 }
-
+.swiper-nested-5{
+  padding-top:3em;
+}
+.swiper-nested-5 .pagination{
+  bottom:3em;
+}
 #breathelight .breathecontent {
   position: relative;
   display: block;
