@@ -15,22 +15,18 @@ $(function() {
       slidesPerView: 1,
       onSlideChangeStart: function(swiper) {
         $("#navBtn li:eq(" + swiper.activeIndex + ")").addClass('active').siblings().removeClass('active')
-<<<<<<< HEAD
       },
-      onSlideChangeEnd: function(swiper){
-      if(swiper.previousIndex == 1){
-        $(".army").show()
-        $(".armySlider").hide()
+      onSlideChangeEnd: function(swiper) {
+        if (swiper.previousIndex == 1) {
+          $(".army").show()
+          $(".armySlider").hide()
+        }
       }
-    }
-=======
-      }
->>>>>>> origin/gh-pages
     })
     var swiperNested1 = new Swiper('.swiper-nested-1', {
       paginationClickable: true,
       slidesPerView: 1,
-      noSwiping : true
+      noSwiping: true
     })
     // var swiperNested2 = new Swiper('.swiper-nested-2', {
     //   pagination: '.pagination-nested-2',
@@ -42,7 +38,7 @@ $(function() {
       slidesPerView: 1,
       onSlideChangeStart: function(swiper) {
         $(".zsrj-title").removeClass("mid")
-        switch(swiper.activeIndex){
+        switch (swiper.activeIndex) {
           case 0:
             $(".zsrj-title").text("Thermal Controls散热控制允许您通过在Active Thermals 主动散热 和 Active Venting 主动通风 中更改可用的设置，来控制计算机的散热和通风行为。")
             break;
@@ -70,34 +66,31 @@ $(function() {
       pagination: '.pagination-nested-4',
       paginationClickable: true,
       slidesPerView: 1,
-      prevButton:'.sbp-4',
-      nextButton:'.sbn-4'
+      prevButton: '.sbp-4',
+      nextButton: '.sbn-4'
     })
     var swiperNested5 = new Swiper('.swiper-nested-5', {
       pagination: '.pagination-nested-5',
       paginationClickable: true,
       slidesPerView: 1,
-      prevButton:'.sbp-5',
-      nextButton:'.sbn-5'
+      prevButton: '.sbp-5',
+      nextButton: '.sbn-5'
     })
-<<<<<<< HEAD
     var swiperNested6 = new Swiper('.swiper-nested-6', {
       pagination: '.pagination-nested-6',
       paginationClickable: true,
       slidesPerView: 1,
-      prevButton:'.sbp-6',
-      nextButton:'.sbn-6',
-      onInit:function(){
+      prevButton: '.sbp-6',
+      nextButton: '.sbn-6',
+      onInit: function() {
         $(".army").show()
         $(".armySlider").hide()
-        $(".army").on("click",function(){
-    $(this).hide()
-    $(".armySlider").show()
-  })
+        $(".army").on("click", function() {
+          $(this).hide()
+          $(".armySlider").show()
+        })
       }
     })
-=======
->>>>>>> origin/gh-pages
     $("#navBtn li").on("mouseup touchend", function() {
       $(this).addClass('active').siblings().removeClass('active');
       swiperParent.swipeTo(parseInt($(this).index()))
@@ -106,10 +99,10 @@ $(function() {
       $(".computerbar .computer").removeClass("turn")
       $(".computerbar .computer").removeClass("turn2")
       $(this).addClass('active').siblings().removeClass('active');
-      if($(this).hasClass("alienware04")){
+      if ($(this).hasClass("alienware04")) {
         $(this).siblings().addClass("turn")
       }
-      if($(this).hasClass("alienware03")){
+      if ($(this).hasClass("alienware03")) {
         $(this).siblings().addClass("turn2")
       }
       swiperNested1.swipeTo(parseInt($(this).index()))
@@ -126,12 +119,12 @@ $(function() {
     autoclose = setTimeout(autoClose, autoclosetime);
     init()
   })
-  $("body").on("click",function(){
+  $("body").on("click", function() {
     window.clearTimeout(autoclose);
     autoclose = setTimeout(autoClose, autoclosetime);
   })
 
-  $("html").on("touchmove.stop",function(event){
+  $("html").on("touchmove.stop", function(event) {
     event.stopPropagation();
     event.preventDefault();
     console.log("you should not pass")
