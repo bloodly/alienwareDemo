@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=1210, initial-scale=0.6,target-densitydpi=300;" name="viewport"/>
+    <meta content="width=1210, initial-scale=0.6,target-densitydpi=300,user-scalable=no;" name="viewport"/>
     <title>Demo</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
@@ -20,6 +20,7 @@
         <div class="nav">
             <ul id='navBtn'>
                 <li class="btn button--moema button--inverted active">产品历史</li>
+                <li class="btn button--moema button--inverted">军事禁区</li>
                 <li class="btn button--moema button--inverted">内在设计</li>
                 <li class="btn button--moema button--inverted">专属软件</li>
                 <li class="btn button--moema button--inverted">性能解读</li>
@@ -32,7 +33,7 @@
     </div>
     <div id="right-win" class="swiper-container swiper-parent">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide ss-div">
                 <div class="computerbar">
                     <div class="computer alienware01 active"></div>
                     <div class="computer alienware02"></div>
@@ -56,10 +57,32 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ss-div">
+                <div class="army">
+                    <img id="army-bg" src="img/army-bg.jpg" alt="">
+                    <img id="army-logo-1" class="army-logo" src="img/army-logo-1.png" alt="">
+                    <img id="army-logo-2" class="army-logo" src="img/army-logo-2.png" alt="">
+                </div>
+                <div class="armySlider">
+                    <div class="swiper-container swiper-nested-6">
+                    <div class="pagination pagination-nested-6"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/army-1.jpg" alt=""></div>
+                        <div class="swiper-slide">
+                            <img src="img/army-2.jpg" alt="">
+                            <img class="army-kuang" src="img/army-kuang-2.png" alt="">
+                            <img class="army-kuang rigth" src="img/army-kuang-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev sbp-6"></div>
+                    <div class="swiper-button-next sbn-6"></div>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-slide ss-div">
                 <iframe id="for360" src="360/demo480.html" frameborder="0"></iframe>
             </div>
-            <div class="swiper-slide zsrj">
+            <div class="swiper-slide zsrj ss-div">
                 <div class="backcover"></div>
                 <div class="swiper-container swiper-nested-3">
                     <div class="swiper-wrapper">
@@ -79,7 +102,7 @@
                 </div>
                 <div class="zsrj-title">Thermal Controls散热控制允许您通过在Active Thermals 主动散热 和 Active Venting 主动通风 中更改可用的设置，来控制计算机的散热和通风行为。</div>
             </div>
-            <div class="swiper-slide xnjd">
+            <div class="swiper-slide xnjd ss-div">
                 <div class="swiper-container swiper-nested-4">
                     <div class="pagination pagination-nested-4"></div>
                     <div class="swiper-wrapper">
@@ -91,7 +114,7 @@
                     <div class="swiper-button-next sbn-4"></div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ss-div">
                 <div class="swiper-container swiper-nested-5">
                     <div class="pagination pagination-nested-5"></div>
                     <div class="swiper-wrapper">

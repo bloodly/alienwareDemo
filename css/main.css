@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 #left-win,#right-win {
-  margin-top: 3em;
+  margin-top: 15em;
 }
 #left-win {
   float: left;
@@ -250,6 +250,8 @@ body {
   height: 36vw;
   width:100%;
   position: relative;
+      padding-top: 3em;
+      margin-bottom: 7em;
 }
 .computerbar:after {
   clear:both;
@@ -406,6 +408,9 @@ body {
 
 #breathelight {
   display: block;
+      position: relative;
+    left: -75px;
+    top: 120px;
 }
 
 #breathelight img {
@@ -432,7 +437,12 @@ body {
   z-index: 2;
   -webkit-animation: breathe 5s infinite ease-in-out;animation: breathe 5s infinite ease-in-out;
 }
-
+.swiper-nested-5{
+  padding-top:3em;
+}
+.swiper-nested-5 .pagination{
+  bottom:3em;
+}
 #breathelight .breathecontent {
   position: relative;
   display: block;
@@ -499,3 +509,16 @@ body {
 .swiper-button-next.swiper-button-white,.swiper-container-rtl .swiper-button-prev.swiper-button-white {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
 }
+
+
+#army-bg {position: relative;top: 6em;}
+.army-logo {position: absolute;bottom: 0;width: 30%!important;left: 35%;}
+#army-logo-1 {}
+#army-logo-2 {opacity: 0;-webkit-animation: breathe 5s infinite ease-in-out;animation: breathe 5s infinite ease-in-out;}
+
+.army-kuang {position: absolute;
+    bottom: 17%;
+    width: 30%!important;
+    left: 9%;opacity: 0;-webkit-animation: breathe 5s infinite ease-in-out;animation: breathe 5s infinite ease-in-out;}
+
+.army-kuang.rigth {left:auto;right:3%;}
