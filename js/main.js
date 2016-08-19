@@ -15,6 +15,7 @@ $(function() {
       slidesPerView: 1,
       onSlideChangeStart: function(swiper) {
         $("#navBtn li:eq(" + swiper.activeIndex + ")").addClass('active').siblings().removeClass('active')
+<<<<<<< HEAD
       },
       onSlideChangeEnd: function(swiper){
       if(swiper.previousIndex == 1){
@@ -22,6 +23,9 @@ $(function() {
         $(".armySlider").hide()
       }
     }
+=======
+      }
+>>>>>>> origin/gh-pages
     })
     var swiperNested1 = new Swiper('.swiper-nested-1', {
       paginationClickable: true,
@@ -76,6 +80,7 @@ $(function() {
       prevButton:'.sbp-5',
       nextButton:'.sbn-5'
     })
+<<<<<<< HEAD
     var swiperNested6 = new Swiper('.swiper-nested-6', {
       pagination: '.pagination-nested-6',
       paginationClickable: true,
@@ -91,6 +96,8 @@ $(function() {
   })
       }
     })
+=======
+>>>>>>> origin/gh-pages
     $("#navBtn li").on("mouseup touchend", function() {
       $(this).addClass('active').siblings().removeClass('active');
       swiperParent.swipeTo(parseInt($(this).index()))
